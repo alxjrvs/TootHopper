@@ -2,5 +2,5 @@
 require './toot_hopper.rb'
 
 #binding.pry
-Tweet.create(:message => "#{ARGV[0]} - #{ARGV[1]}")
+Tweet.create(:message => "\"#{ARGV[0]}\" - #{ARGV[1]}")
 
