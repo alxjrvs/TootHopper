@@ -6,8 +6,16 @@ require 'bundler/setup'
 require 'twitter'
 require 'data_mapper'
 require 'heroku'
+require 'tweetstream'
 require './config.rb'
 require './models.rb'
+
+#def listen
+  #@client = TweetStream::Client.new
+  #@client.on_direct_message do |dm|
+    #Tweet.create(:message => dm.text)
+  #end
+#end
 
 class TootHopper
   attr_accessor :twitter_config, :log, :hopper
@@ -22,7 +30,8 @@ class TootHopper
   end
 
   def post
-    Twitter.update(msg)
+    Twitter.update(@tweet.message)
+    Tweet[@tweet_id].destroy
   end
 end
 

@@ -5,6 +5,7 @@ gem "logger"
 gem "twitter"
 gem "heroku"
 gem "pg"
+gem "tweetstream"
 
 group :production do
   gem "dm-postgres-adapter"
