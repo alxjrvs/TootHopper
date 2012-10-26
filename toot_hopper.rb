@@ -14,7 +14,7 @@ class TootHopper
 
   def initialize
 
-    @log = Logger.new("log_file.log")
+    @log = DataMapper::Logger.new("log_file.log")
     @tweet_id = rand(Tweet.all.size)
     @tweet = Tweet[@tweet_id]
 
@@ -22,9 +22,7 @@ class TootHopper
   end
 
   def post
-    num = rand(@hopper.size)
-    binding.pry
-    #Twitter.update(msg)
+    Twitter.update(msg)
   end
 end
 
