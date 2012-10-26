@@ -17,6 +17,10 @@ require './models.rb'
   #end
 #end
 
+def hop(tweet)
+  Tweet.create(:message => tweet)
+end
+
 class TootHopper
   attr_accessor :twitter_config, :log, :hopper
 
