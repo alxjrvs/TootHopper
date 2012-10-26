@@ -5,3 +5,4 @@
  ~ no such table: tweets (code: 1, sql state: , query: SELECT "id", "message" FROM "tweets" ORDER BY "id", uri: sqlite3::memory:?scheme=sqlite&user=&password=&host=&port=&query=&fragment=&adapter=sqlite3&path=:memory:)
  ~ no such table: tweets (code: 1, sql state: , query: INSERT INTO "tweets" DEFAULT VALUES, uri: sqlite3::memory:?scheme=sqlite&user=&password=&host=&port=&query=&fragment=&adapter=sqlite3&path=:memory:)
  ~ no such table: tweets (code: 1, sql state: , query: SELECT "id", "message" FROM "tweets" ORDER BY "id", uri: sqlite3::memory:?scheme=sqlite&user=&password=&host=&port=&query=&fragment=&adapter=sqlite3&path=:memory:)
+ ~ no such table: tweets (code: 1, sql state: , query: SELECT "id" FROM "tweets" ORDER BY "id", uri: sqlite3::memory:?scheme=sqlite&user=&password=&host=&port=&query=&fragment=&adapter=sqlite3&path=:memory:)

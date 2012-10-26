@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require '../toot_hopper.rb'
+
+TootHopper.new.post
