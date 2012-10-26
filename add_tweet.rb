@@ -1,4 +1,3 @@
-require 'pry'
 require './toot_hopper.rb'
 
 #binding.pry
