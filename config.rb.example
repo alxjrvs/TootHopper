@@ -1,0 +1,16 @@
+Twitter.configure do |config|
+  config.consumer_key = 
+  config.consumer_secret =
+  config.oauth_token =
+  config.oauth_token_secret = 
+end
+
+
+#put Datamapper stuff here
+#Made for heroku!
+
+if ENV['RACK_ENV']
+  DataMapper.setup(:default, ENV['DATABASE_URL'] || 'postgres://localhost/mydb')
+else
+   DataMapper.setup(:default, 'sqlite::memory:')
+end
