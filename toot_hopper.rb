@@ -9,7 +9,6 @@ require 'heroku'
 require 'tweetstream'
 require './config.rb'
 require './models.rb'
-
 #def listen
   #@client = TweetStream::Client.new
   #@client.on_direct_message do |dm|
@@ -18,6 +17,7 @@ require './models.rb'
 #end
 
 def add_to_hopper(tweet)
+  puts tweet
   Tweet.create(:message => tweet)
 end
 

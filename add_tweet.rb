@@ -1,3 +1,6 @@
+require 'pry'
 require './toot_hopper.rb'
 
-add_to_hopper ARGV[0]
+binding.pry
+Tweet.create(:message => ARGV[0])
+
