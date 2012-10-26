@@ -17,7 +17,7 @@ require './models.rb'
   #end
 #end
 
-def hop(tweet)
+def add_to_hopper(tweet)
   Tweet.create(:message => tweet)
 end
 
